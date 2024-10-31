@@ -26,6 +26,7 @@ huggingface-cli download KwaiVGI/LivePortrait --local-dir pretrained_weights --e
 ```
 you can also visit LivePortrait github searching those pretrained weights,but remember put them to models/liveportrait
 
+​​![cbedb95a-7d1a-4686-8d26-4b72d9f75552](https://github.com/user-attachments/assets/ef1d9943-5a47-4191-a683-3804439c6197)
 
 
 
