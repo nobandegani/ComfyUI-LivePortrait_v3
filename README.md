@@ -29,4 +29,6 @@ you can also visit LivePortrait github searching those pretrained weights,but re
 ​​![cbedb95a-7d1a-4686-8d26-4b72d9f75552](https://github.com/user-attachments/assets/ef1d9943-5a47-4191-a683-3804439c6197)
 
 
+###maybe there will be some problem about address models,please use the abusolte address,or tell me I will offer you help.
+
 
