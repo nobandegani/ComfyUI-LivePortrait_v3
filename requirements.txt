@@ -1,0 +1,4 @@
+tyro==0.8.5
+pillow>=10.2.0
+pykalman==0.9.7
+transformers==4.38.0
