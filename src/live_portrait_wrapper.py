@@ -38,22 +38,22 @@ class LivePortraitWrapper(object):
         except:
             self.device = 'cuda:' + str(self.device_id)
 
-        model_config = yaml.load(open('/app/custom_nodes/LivePortrait/src/config/models.yaml', 'r'), Loader=yaml.SafeLoader)#########################################
+        model_config = yaml.load(open('custom_nodes/Comfyui_Liveportrait_v3/src/config/models.yaml', 'r'), Loader=yaml.SafeLoader)#########################################
         # init F
-        self.appearance_feature_extractor = load_model("/app/models/live/pretrained_weights/liveportrait/base_models/appearance_feature_extractor.pth", model_config, self.device, 'appearance_feature_extractor')
+        self.appearance_feature_extractor = load_model("models/Liveportrait_v3/liveportrait/base_models/appearance_feature_extractor.pth", model_config, self.device, 'appearance_feature_extractor')
         log(f'Load appearance_feature_extractor from F done.')
         # init M
-        self.motion_extractor = load_model("/app/models/live/pretrained_weights/liveportrait/base_models/motion_extractor.pth", model_config, self.device, 'motion_extractor')
+        self.motion_extractor = load_model("models/Liveportrait_v3/liveportrait/base_models/motion_extractor.pth", model_config, self.device, 'motion_extractor')
         log(f'Load motion_extractor from M done.')
         # init W
-        self.warping_module = load_model("/app/models/live/pretrained_weights/liveportrait/base_models/warping_module.pth", model_config, self.device, 'warping_module')
+        self.warping_module = load_model("models/Liveportrait_v3/liveportrait/base_models/warping_module.pth", model_config, self.device, 'warping_module')
         log(f'Load warping_module from W done.')
         # init G
-        self.spade_generator = load_model("/app/models/live/pretrained_weights/liveportrait/base_models/spade_generator.pth", model_config, self.device, 'spade_generator')
+        self.spade_generator = load_model("models/Liveportrait_v3/liveportrait/base_models/spade_generator.pth", model_config, self.device, 'spade_generator')
         log(f'Load spade_generator from G done.')
         # init S and R
         
-        self.stitching_retargeting_module = load_model("/app/models/live/pretrained_weights/liveportrait/retargeting_models/stitching_retargeting_module.pth", model_config, self.device, 'stitching_retargeting_module')
+        self.stitching_retargeting_module = load_model("models/Liveportrait_v3/liveportrait/retargeting_models/stitching_retargeting_module.pth", model_config, self.device, 'stitching_retargeting_module')
         log(f'Load stitching_retargeting_module from S done.')
         
         # Optimize for inference
