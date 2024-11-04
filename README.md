@@ -27,7 +27,7 @@ If you cannot access to Huggingface, you can use hf-mirror to download:
 export HF_ENDPOINT=https://hf-mirror.com
 huggingface-cli download KwaiVGI/LivePortrait --local-dir pretrained_weights --exclude "*.git*" "README.md" "docs"
 ```
-you can also visit LivePortrait github searching those pretrained weights,but remember put them to models/liveportrait
+You can also manually download the model to the folder from the URL: https://huggingface.co/KwaiVGI/LivePortrait/tree/main, and remember put them to models/Liveportrait_v3
 
 ​​![cbedb95a-7d1a-4686-8d26-4b72d9f75552](https://github.com/user-attachments/assets/ef1d9943-5a47-4191-a683-3804439c6197)
 
