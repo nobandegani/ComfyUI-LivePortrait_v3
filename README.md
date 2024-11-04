@@ -12,6 +12,10 @@ We developed a custom_node for Liveportrait_v3 that enables flexible use on Comf
 ```bash
 git clone https://github.com/VangengLab/Comfyui_Liveportrait_v3.git
 cd Comfyui_Liveportrait_v3
+```
+For the environment, it can be configured according to Comfyui_liveportrait_v1 and liveportrait. For details, you can refer to https://github.com/KwaiVGI/LivePortrait and https://github.com/kijai/ComfyUI-LivePortraitKJ:https://github.com/KwaiVGI/LivePortrait.
+or refer to my environment and execute the instruction.
+```bash
 pip install -r requirements.txt
 ```
 ## Download pretrained weights
