@@ -17,6 +17,7 @@ pip install -r requirements.txt
 ## Download pretrained weights
 The easiest way to download the pretrained weights is from HuggingFace:
 ```bash
+cd models/
 huggingface-cli download KwaiVGI/LivePortrait --local-dir Liveportrait_v3 --exclude "*.git*" "README.md" "docs"
 ```
 If you cannot access to Huggingface, you can use hf-mirror to download:
