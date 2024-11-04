@@ -237,7 +237,7 @@ class LivePortraitPipeline(object):
                 if combined_lip_ratio_tensor_before_animation[0][0] >= 0.03:
                     lip_delta_before_animation = self.live_portrait_wrapper.retarget_lip(x_s, combined_lip_ratio_tensor_before_animation)
 
-            a = cv2.imread(make_abs_path("/app/custom_nodes/LivePortrait/src/utils/resources/mask_template.png"), cv2.IMREAD_COLOR)
+            a = cv2.imread(make_abs_path("utils/resources/mask_template.png"), cv2.IMREAD_COLOR)
             a = np.array(a)
             mask_ori_float = prepare_paste_back(a, crop_info['M_c2o'], dsize=(source_rgb_lst[0].shape[1], source_rgb_lst[0].shape[0]))
 
@@ -316,7 +316,7 @@ class LivePortraitPipeline(object):
                         if flag_is_driving_video:
                             delta_new = x_s_info['exp'] + (x_d_i_info['exp'] - x_d_0_info['exp'])
                         else:
-                            with open(make_abs_path('/app/custom_nodes/LivePortrait/src/utils/resources/lip_array.pkl'), 'rb') as f:
+                            with open(make_abs_path('utils/resources/lip_array.pkl'), 'rb') as f:
                                 a = pkl.load(f)
                             delta_new = x_s_info['exp'] + (x_d_i_info['exp'] - torch.from_numpy(a).to(dtype=torch.float32, device=device))
                 elif animation_region == "lip":
