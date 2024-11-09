@@ -1,4 +1,4 @@
-# Comfyui_Liveportrait_v3
+# ComfyUI_Liveportrait_v3
 ![image](https://github.com/user-attachments/assets/5a7f07e8-c856-4a6e-ad81-82ebe1d5934d)
 
 ## 🔥 Updates
@@ -10,8 +10,8 @@ We developed a custom_node for Liveportrait_v3 that enables flexible use on Comf
 ## Getting Started
 ### 1. Clone the code and prepare the environment 
 ```bash
-git clone https://github.com/VangengLab/Comfyui_Liveportrait_v3.git
-cd Comfyui_Liveportrait_v3
+git clone https://github.com/VangengLab/ComfyUI_Liveportrait_v3.git
+cd ComfyUI_Liveportrait_v3
 ```
 For the environment, it can be configured according to Comfyui_liveportrait_v1 and liveportrait. For details, you can refer to https://github.com/KwaiVGI/LivePortrait and https://github.com/kijai/ComfyUI-LivePortraitKJ:https://github.com/KwaiVGI/LivePortrait.
 or refer to my environment and execute the instruction.
